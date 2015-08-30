@@ -1,0 +1,11 @@
+{
+  "name": "0utsider-syntax",
+  "theme": "syntax",
+  "version": "0.1.0",
+  "description": "A dark theme for syntax",
+  "repository": "none",
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  }
+}
