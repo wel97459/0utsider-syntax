@@ -3,11 +3,6 @@
 
 atom-text-editor, // <- remove when Shadow DOM can't be disabled
 :host {
-  // background-image: url(atom://0utsider-syntax/image/SishhqFHxQQ.jpg);
-   background-image: url(http://cs627720.vk.me/v627720208/1704c/gXqJvJbDZv0.jpg);
-   background-position: center;
-   background-size: cover;
-   background-repeat: no-repeat;
 
   color: @syntax-text-color;
   font-family: Hack;
@@ -104,7 +99,7 @@ atom-text-editor, // <- remove when Shadow DOM can't be disabled
       color: @syntax-color-added;
       font-weight: bold;
   }
-  
+
   atom-text-editor::shadow .gutter .line-number.git-line-modified {
       border-left-width: 3px;
       border-left-color: @syntax-color-modified;
@@ -123,4 +118,14 @@ atom-text-editor, // <- remove when Shadow DOM can't be disabled
   atom-text-editor::shadow .gutter .line-number.git-line-removed {
       color: @syntax-color-removed;
       font-weight: bold;
+  }
+
+  atom-text-editor:not(.mini) {
+      //background-image: url(http://cs627720.vk.me/v627720208/1704c/gXqJvJbDZv0.jpg);
+      background-image: url(http://cs629326.vk.me/v629326716/165a3/LqgCZasi30A.jpg);
+      //background-image: url(http://cs627720.vk.me/v627720208/1704c/gXqJvJbDZv0.jpg);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+
   }
