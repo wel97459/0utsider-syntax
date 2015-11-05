@@ -3,12 +3,15 @@
 @syntax-hue:          220;
 @syntax-saturation:   13%;
 @syntax-brightness:   0%;
+@base-bg: #333;
+@black: #000;
 
 // Base colors -----------------------------------
 @syntax-accent: hsl(@syntax-hue, 100%, 66% );
 @syntax-guide:  fade(@syntax-fg, 35%);
 @syntax-fg:     @mono-1;
-@syntax-bg:     hsl(@syntax-hue, @syntax-saturation, @syntax-brightness);
+@syntax-bg:     fade(@base-bg, 40%);
+@syntax-bg-dim: fade(@black, 85%);
 
 // Monochrome -----------------------------------
 @mono-1: hsl(@syntax-hue, 14%, 71%); // default text
