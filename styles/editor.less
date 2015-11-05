@@ -4,7 +4,7 @@
 atom-text-editor, // <- remove when Shadow DOM can't be disabled
 :host {
   // background-image: url(atom://0utsider-syntax/image/SishhqFHxQQ.jpg);
-   background-image: url(http://cs406430.vk.me/v406430798/63a3/lN7WsFA8pFs.jpg);
+   background-image: url(http://cs627720.vk.me/v627720208/1704c/gXqJvJbDZv0.jpg);
    background-position: center;
    background-size: cover;
    background-repeat: no-repeat;
@@ -82,7 +82,7 @@ atom-text-editor, // <- remove when Shadow DOM can't be disabled
         left: 0px;
         bottom: 0px;
         width: 25px;
-        border-bottom: 1px dotted fade(@syntax-color-removed, 50%);
+        border-bottom: 2px dotted fade(@syntax-color-removed, 50%);
         pointer-events: none;
       }
     }
@@ -93,4 +93,34 @@ atom-text-editor, // <- remove when Shadow DOM can't be disabled
   .fold-marker:after {
     color: @syntax-gutter-text-color-selected;
   }
+
+
 }
+
+  atom-text-editor::shadow .gutter .line-number.git-line-added {
+      border-left-width: 3px;
+      border-left-color: @syntax-color-added;
+      padding-left: 5px;
+      color: @syntax-color-added;
+      font-weight: bold;
+  }
+  
+  atom-text-editor::shadow .gutter .line-number.git-line-modified {
+      border-left-width: 3px;
+      border-left-color: @syntax-color-modified;
+      padding-left: 5px;
+      color: @syntax-color-modified;
+      font-weight: bold;
+  }
+  atom-text-editor::shadow .gutter .line-number.git-line-removed:before {
+      bottom: -5px;
+      margin-top: -5px;
+      border-width: 3px;
+      border-left-color: @syntax-color-removed;
+      color: @syntax-color-removed;
+      font-weight: bold;
+  }
+  atom-text-editor::shadow .gutter .line-number.git-line-removed {
+      color: @syntax-color-removed;
+      font-weight: bold;
+  }
