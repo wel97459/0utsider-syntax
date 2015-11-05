@@ -56,11 +56,11 @@ atom-text-editor, // <- remove when Shadow DOM can't be disabled
 
   .gutter {
     .line-number {
-      color: @syntax-gutter-text-color;
+      color: lighten(@syntax-gutter-text-color, 10%);
       -webkit-font-smoothing: antialiased;
 
       &.cursor-line {
-        color: @syntax-gutter-text-color-selected;
+        color: lighten(@syntax-gutter-text-color-selected, 10%);
         background-color: @syntax-gutter-background-color-selected;
       }
       &.cursor-line-no-selection {
